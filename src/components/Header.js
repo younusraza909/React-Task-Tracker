@@ -1,17 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "./Button";
 
 const Header = () => {
-    return (
-        <header>
-            <h1>Task Tracker</h1>
-        </header>
-    )
-}
+  return (
+    <header className="header">
+      <h1>Task Tracker</h1>
+      <Button color="green" text="Hello" />
+    </header>
+  );
+};
 
-Header.propTypes={
-    title:PropTypes.string
-}
+Header.propTypes = {
+  title: PropTypes.string,
+};
 
-export default Header
+export default Header;
